@@ -11,8 +11,6 @@
         <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
 
     {% endif %}
-
-    <!-- <p class="postcontent">{{post.title|safe|linebreaksbr}}</p> -->
     <p>{{post.text}}</p>
     
     {% if user.is_authenticated %}
